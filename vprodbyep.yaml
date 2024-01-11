@@ -28,8 +28,9 @@ spec:
         env:
           - name: MYSQL_ROOT_PASSWORD
             valueFrom:
-              name: app-secret
-              key: db-pass
+              secretKeyRef:
+                name: app-secret
+                key: db-pass
       nodeSelector:
         zone: us-east-2a
 
