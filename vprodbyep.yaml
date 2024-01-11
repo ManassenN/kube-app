@@ -37,8 +37,8 @@ spec:
       volumes:
         - name: vpro-db-data
           awsElasticBlockStore:
-          volumeID: vol-01ead551add2f7dcc
-          fsType: ext4
+            volumeID: vol-01ead551add2f7dcc
+            fsType: ext4
 
       initContainers:
         - name: busybox
